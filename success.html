@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Cartão de Visitas!</title>
+  </head>
+  <body>
+      <main class="content">
+        <section class="container-cart">
+            <figure class="figure-cart">
+                <img class="img-fluid" src="images/1.jpg" alt="descricao da imagem">
+            </figure>
+            <article class="article-cart">
+                <h1>E-mail enviado</h1>
+                <p>Seu e-mail foi enviado com sucesso, em breve entraremos em contato!</p>
+                <a href="index.html" class="btn btn-primary data-toggle=" >Voltar para home</a>
+
+            </article>
+        </section>
+      </main>
+
+      <!-- Modal -->
+<div class="modal fade" id="modalcontact"  tabindex="-1" role="dialog" aria-labelledby="modalcontactLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalcontactLabel">Entrar em contato</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form action="/success" name="contact" data-netlify-recaptcha="true" netlify>
+                <div class="form-group">
+                    <label for="name">Seu nome</label>
+                    <input type="text" name="name" class="form-control">
+                  </div>
+                <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="text" name="email" class="form-control" >
+                </div>
+                  <div class="form-group">
+                    <label for="descricao">Descreva todo o contato aqui!</label>
+                    <textarea name="message" class="form-control" rows="3"></textarea>
+                  </div>
+                  <div data-netlify-recaptcha="true"></div>
+                <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
