@@ -14,16 +14,19 @@
     height: 330px;
     display: flex;
     align-items: center;
-    padding: 20px;
+    overflow: hidden;
 }
-.figure-cart{
+.figure-cart {
     margin-bottom: 0;
+    max-width: 500px;
+    width: 100%;
 }
-
 
 .article-cart {
     padding: 20px;
-    height: 100%
+    height: 100%;
+    max-width: 330px;
+    width: 100%;
 }
 
 @media(max-width: 991px) {
